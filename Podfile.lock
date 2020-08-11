@@ -1,0 +1,19 @@
+PODS:
+  - RongCloudIM/IMKit (4.0.1.1):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (4.0.1.1)
+
+DEPENDENCIES:
+  - RongCloudIM/IMKit (~> 4.0.1.1)
+  - RongCloudIM/IMLib (~> 4.0.1.1)
+
+SPEC REPOS:
+  trunk:
+    - RongCloudIM
+
+SPEC CHECKSUMS:
+  RongCloudIM: 7600e981383ccc5bc1146778f44f4280a40b30f6
+
+PODFILE CHECKSUM: bae2fdb7d4ac466c821405883913ecb6eee37eb5
+
+COCOAPODS: 1.9.1
