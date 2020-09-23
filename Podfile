@@ -7,7 +7,7 @@ target 'rongcloud-ios-imdemo-import' do
 
   # Pods for rongcloud-ios-imdemo-import
 
-  pod 'RongCloudIM/IMKit', '~> 4.0.1.1'
-  pod 'RongCloudIM/IMLib', '~> 4.0.1.1'
+  pod 'RongCloudIM/IMKit', '~> 4.0.3'
+  pod 'RongCloudIM/IMLib', '~> 4.0.3'
 
 end
