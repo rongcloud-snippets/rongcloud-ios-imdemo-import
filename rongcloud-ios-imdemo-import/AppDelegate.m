@@ -27,9 +27,11 @@
 
     [self setRootViewController];
     
+    [self setRongCloudDelegate];
+    
     [self connectRongCloud];
     
-    [self setRongCloudDelegate];
+
     
     return YES;
 }
