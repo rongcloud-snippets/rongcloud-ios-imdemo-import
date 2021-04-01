@@ -49,6 +49,16 @@
     // 连接融云服务，需要传入对应的 token。 测试情况 token 可直接在开发者后台获取。
     // 获取 token ：https://developer.rongcloud.cn/apitool/Mw8EsJmV43kZBugTMSAZXg
     // 参考文档：https://docs.rongcloud.cn/v3/views/im/ui/guide/private/connection/connect/ios4.html
+    //SDK 在 4.0 版本后修改了连接的 API，所以根据 pod 安装的版本，执行对应的方法
+#if SDK_VERSION == 2
+    [[RCIM sharedRCIM] connectWithToken:RONGCLOUD_TOKEN success:^(NSString *userId) {
+        // 连接成功
+    } error:^(RCConnectErrorCode status) {
+        // 连接失败
+    } tokenIncorrect:^{
+        // token 不匹配
+    }];
+#elif SDK_VERSION == 4 || SDK_VERSION == 5
     [[RCIM sharedRCIM] connectWithToken:RONGCLOUD_TOKEN dbOpened:^(RCDBErrorCode code) {
         
         // 数据库打开
@@ -59,6 +69,7 @@
         
         // 连接失败
     }];
+#endif
 }
 
 - (void)setRongCloudDelegate{

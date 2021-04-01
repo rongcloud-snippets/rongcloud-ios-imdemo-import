@@ -17,4 +17,11 @@
 // 获取 token ：https://developer.rongcloud.cn/apitool/Mw8EsJmV43kZBugTMSAZXg
 #define RONGCLOUD_TOKEN  @"xxxx"
 
+//编译时会执行脚本，通过 podfile 文件识别 SDK 版本，移除重复的宏
+#define SDK_VERSION 2
+#define SDK_VERSION 4
+#define SDK_VERSION 5
+
 #endif /* RCSConfig_h */
+
+
