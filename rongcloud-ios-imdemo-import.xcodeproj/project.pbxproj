@@ -112,7 +112,6 @@
 				A45381E824DD348E00B9CC48 /* Frameworks */,
 				A45381E924DD348E00B9CC48 /* Resources */,
 				53449E9C74778C6C995D6615 /* [CP] Copy Pods Resources */,
-				B3F352D17820C690B2AB158B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,23 +221,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nsh before_build.sh Podfile rongcloud-ios-imdemo-import/RCSConfig.h\n";
-		};
-		B3F352D17820C690B2AB158B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rongcloud-ios-imdemo-import/Pods-rongcloud-ios-imdemo-import-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rongcloud-ios-imdemo-import/Pods-rongcloud-ios-imdemo-import-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rongcloud-ios-imdemo-import/Pods-rongcloud-ios-imdemo-import-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
